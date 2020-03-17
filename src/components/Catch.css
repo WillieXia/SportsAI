@@ -1,0 +1,39 @@
+.Catch{
+    display:flex; 
+    flex-direction:row;
+    position:fixed;
+}
+
+.Title1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.Title2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.SportsWord{
+    border-bottom: solid 5px gray;
+    display: inline;
+    padding-bottom: 5%;
+}
+
+.Description{
+    font-size: 2rem;
+    padding-top: 5%;
+}
+
+.ballerimage{
+    width: 150%;
+    padding-left: 140%;
+}
+
+.leftSection{
+    padding-top: 14%;
+}
+
+.spacer1{
+    flex: 5;
+}

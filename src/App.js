@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
-import imgone from './squat-pic2.jpg';
+import Catch from './components/Catch';
 
 class App extends React.Component {
   render(){
     return(
       <div className = "App">
-        <img className = "backgroundSquat"  src={imgone} />
+        <div className = "nbar">
         <NavBar />
+        </div>
+        <div className = "Catch">
+          <Catch />
+        </div>
       </div>
     );
   }
