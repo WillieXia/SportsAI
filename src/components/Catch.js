@@ -17,7 +17,7 @@ const Catch = props =>(
             </p>
         </section>
         <div className ="spacer1"></div>
-        <section>
+        <section className = "rightSection">
             <img className = "ballerimage"  src={baller} />
         </section>
     </header>

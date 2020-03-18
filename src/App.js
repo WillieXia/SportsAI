@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Catch from './components/Catch';
+import Description from './components/Description';
 
 class App extends React.Component {
   render(){
     return(
       <div className = "App">
-        <div className = "nbar">
-        <NavBar />
-        </div>
-        <div className = "Catch">
+        <meta name="viewport" content="width=device-width, maximum-scale=0"/>
+        <section className = "nbar">
+          <NavBar />
+        </section>
+        <section className = "CatchSection">
           <Catch />
-        </div>
+        </section>
       </div>
     );
   }

@@ -2,15 +2,26 @@
     display:flex; 
     flex-direction:row;
     position:fixed;
+    width:100%;
+}
+
+.leftSection{
+    padding: 8%;
+    padding-left: 10%;
+    width: 50%;
+}
+
+.rightSection{
+    width: 50%;
 }
 
 .Title1 {
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 700;
 }
 
 .Title2{
-    font-size: 4rem;
+    font-size: 4vw;
     font-weight: 700;
 }
 
@@ -21,19 +32,16 @@
 }
 
 .Description{
-    font-size: 2rem;
+    font-size: 2vw;
+    font-weight: 300;
     padding-top: 5%;
 }
 
 .ballerimage{
-    width: 150%;
-    padding-left: 140%;
-}
-
-.leftSection{
-    padding-top: 14%;
+    position: center;
+    width:80%;
 }
 
 .spacer1{
-    flex: 5;
+    
 }
