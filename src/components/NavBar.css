@@ -5,16 +5,16 @@
 .navbar_navigation{
     display: flex;
     align-items:center;
-    height: 120px;
+    height: 6vw;
     width: 100%;
 }
 
 .navBar_logo a{
     color: black;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 3vw;
     font-weight: 300;
-    padding: 0 4rem;
+    padding: 0 40%;
 }
 
 .navbar_items a{
@@ -23,7 +23,7 @@
 }
 
 .spacer{
-    flex: .95;
+    flex: .9;
 }
 
 .Item1{
@@ -34,11 +34,11 @@
     list-style: none;
     margin: 0;
     display: flex;
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 300; 
 }
 
 
 .navbar_items li{
-    padding: 0 3rem;
+    padding-left:15%;
 }
