@@ -15,6 +15,12 @@ class App extends React.Component {
         <section className = "CatchSection">
           <Catch />
         </section>
+        <section className = "Desc">
+          <Description />
+        </section>
+        <section>
+          <Catch />
+        </section>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 .Catch{
     display:flex; 
     flex-direction:row;
-    position:fixed;
+    position:flex;
     width:100%;
 }
 
@@ -16,12 +16,12 @@
 }
 
 .Title1 {
-    font-size: 4vw;
+    font-size: 4em;
     font-weight: 700;
 }
 
 .Title2{
-    font-size: 4vw;
+    font-size: 4em;
     font-weight: 700;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .Description{
-    font-size: 2vw;
+    font-size: 2em;
     font-weight: 300;
     padding-top: 5%;
 }

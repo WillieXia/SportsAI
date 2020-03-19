@@ -34,11 +34,13 @@
     list-style: none;
     margin: 0;
     display: flex;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 300; 
 }
 
 
 .navbar_items li{
-    padding-left:15%;
+    /* padding: 0 3rem; */
+    /* padding-left: 15%; */
+    margin-left:3em;
 }
