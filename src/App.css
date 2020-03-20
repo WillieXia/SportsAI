@@ -1,3 +1,126 @@
 .Desc{
     padding-top:4%;
 }
+
+.Catch{
+    display:flex; 
+    flex-direction:row;
+    position:flex;
+    width:100%;
+}
+.leftSection{
+    padding-top: 8%;
+    padding-left: 10%;
+    width: 50vw;
+}
+
+.Title1 {
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.Title2{
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.SportsWord{
+    border-bottom: solid 5px gray;
+    display: inline;
+    padding-bottom: 5%;
+}
+
+.Description{
+    font-size: 2.5vw;
+    font-weight: 300;
+    padding-top: 5%;
+}
+
+.ballerimage{
+    position: center;
+    width:35vw;
+    flex:1;
+}
+
+.Description2 {
+    display:flex; 
+    flex-direction:row;
+    position:flex;
+    width:100%;
+    background-color: #D6D8D9;
+    
+}
+
+.Artificial_Intelligence_in_Sports{
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.ellige{
+    border-bottom: solid 5px gray;
+    display: inline;
+    padding-bottom: 3%;
+}
+
+.The_world_of{
+    padding-top: 5%;
+    font-size: 2vw;
+    font-weight: 300;
+    width:55%;
+    padding-left:22.5%;
+}
+.CircleImages{
+    padding-top:2%;
+}
+.CircleImages img{
+    width:15vw;
+    height:15vw;
+    border-radius: 50%;
+}
+
+.spacer2{
+    display: inline;
+    padding-left:10%;
+}
+
+.EndSection{
+    display:flex; 
+    flex-direction:row;
+    position:flex;
+    width:100%;
+    background: white;
+}
+
+.See_it_in_action{
+    font-size: 3vw;
+    font-weight: 300;
+    padding-top: 5%;
+}
+
+.How_it_Works{
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+.How_it{
+    border-bottom: solid 5px gray;
+    display: inline;
+    padding-bottom: 5%;
+
+}
+
+.Description3{
+    padding-top: 10%;
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+.AI-Photo{
+    padding-top: 10%;
+    position: center;
+    width:35vw;
+    flex:1;
+}
