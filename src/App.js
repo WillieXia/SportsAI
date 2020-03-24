@@ -3,8 +3,6 @@ import './App.css';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Redirect } from '../node_modules/react-router-dom';
 
-
-
 import baller from './components/images/hooper.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
@@ -45,7 +43,7 @@ class App extends React.Component {
 const Home = () => (
   <div>
     <meta name="viewport" content="width=device-width, maximum-scale=0" />
-    <section className="CatchSection">
+    <section className="CatchSection" id = "CatchSection">
       <header className="Catch">
         {/*Information part*/}
         <section className="leftSection">
@@ -64,7 +62,7 @@ const Home = () => (
         </section>
       </header>
     </section>
-    <section className="Description2">
+    <section className="Description2" id = "Description">
       <div className="Artificial_Intelligence_in_Sports">
         <header>Artificial Int<span className="ellige">ellige</span>nce in Sports</header>
         <p className="The_world_of">
@@ -82,7 +80,7 @@ const Home = () => (
         <p></p>
       </div>
     </section>
-    <section className="EndSection">
+    <section className="EndSection" id = "EndSection">
       <section className="leftSection">
         <p className="See_it_in_action">
           See it in action
