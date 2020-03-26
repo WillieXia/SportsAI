@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import sportsai
+from .models import Person
 
-admin.site.register(sportsai)
+admin.site.register(Person)
 # Register your models here.
