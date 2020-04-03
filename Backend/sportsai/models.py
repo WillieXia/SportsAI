@@ -6,7 +6,7 @@ class Person(models.Model):
     LastName = models.CharField(max_length=20)
 
     def __str__(self):
-        """A string representation of the model."""
+        """A string representation of the name."""
         return self.FirstName + " " + self.LastName
 
 class Loan(models.Model):
