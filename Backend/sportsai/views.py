@@ -8,10 +8,10 @@ from .serializers import PersonSerializer
 
 
 class FirstPerson(generics.ListCreateAPIView):
-    queryset = Person.FirstName
+    queryset = Person.objects.all()
     serializer_class = PersonSerializer
 
 
 class LastPerson(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Person.LastName
+    queryset = Person.objects.all()
     serializer_class = PersonSerializer

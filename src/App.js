@@ -17,7 +17,7 @@ const styles = {
 
 
 
-class App extends React.Component {
+export class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -130,5 +130,3 @@ const Contact = () => (
   </div>
 );
 
-
-export default App;

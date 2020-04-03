@@ -9,6 +9,7 @@ class Person(models.Model):
         """A string representation of the name."""
         return self.FirstName + " " + self.LastName
 
+
 class Loan(models.Model):
     BUSINESS_TYPES = (
     ('', 'Choose...'),
