@@ -103,13 +103,12 @@ const Home = () => (
 );
 
 const Login = () => (
-    <div className="root-container">
-        
-        <meta name="viewport" content="width=device-width, maximum-scale=0" />
-        <section className="nbar">
-          <LoginBox/>
-        </section>
-    </div>
+  <div className="Login-Box">
+    <meta name="viewport" content="width=device-width, maximum-scale=0" />
+    <section className="nbar">
+      <LoginBox/>
+    </section>
+  </div>
 );
 
 const About = () => (
@@ -132,7 +131,6 @@ const Contact = () => (
 );
 
 class LoginBox extends React.Component {
-  
   constructor() {
     super();
     this.state = {
@@ -144,22 +142,22 @@ class LoginBox extends React.Component {
 
   render() {
     return (
-      <div className="inner-container">
-        <div className="header">
-          Sign Up With
+      <div className="login-box">
+        <div className="login-title">
+          Login
         </div>
         <div className="box">
 
-          <div className="input-group">
+          <div className="username-input">
             <label htmlFor="username">Username</label>
             <input
               type="text"
               name="username"
-              className="login-input"
-              placeholder="Username"/>
+              className=login-input"
+              placeholder="Password"/>
           </div>
           
-          <div className="input-group">
+          <div className="password-input">
             <label htmlFor="password">Password</label>
             <input
               type="password"
@@ -168,16 +166,15 @@ class LoginBox extends React.Component {
               placeholder="Password"/>
           </div>
 
-          <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
-
-          <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Facebook</button>
-
-          <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Google</button>
-
+          <button
+            type="button"
+            className="login-button"
+            onClick={this
+            .submitLogin
+            .bind(this)}>Login</button>
           </div>
         </div>  
     );
   }
-
 }
 export default App;
