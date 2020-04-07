@@ -17,7 +17,7 @@ const styles = {
 
 
 
-class App extends React.Component {
+export class App extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -131,6 +131,7 @@ const Contact = () => (
   </div>
 );
 
+<<<<<<< HEAD
 class LoginBox extends React.Component {
   
   constructor() {
@@ -181,3 +182,5 @@ class LoginBox extends React.Component {
 
 }
 export default App;
+=======
+>>>>>>> 6aed1b4daae4632f884fb431e51340f642987a90

@@ -2,12 +2,13 @@ from django.db import models
 
 # Create your models here.
 class Person(models.Model):
-    FirstName = models.CharField(max_length=20)
-    LastName = models.CharField(max_length=20)
+    First = models.CharField(max_length=20)
+    Last = models.CharField(max_length=20)
 
     def __str__(self):
-        """A string representation of the model."""
-        return self.FirstName + " " + self.LastName
+        """A string representation of the name."""
+        return self.First + " " + self.Last
+
 
 class Loan(models.Model):
     BUSINESS_TYPES = (
@@ -51,44 +52,6 @@ class RoutineExercise(models.Model):
     value = models.IntegerField()
     #value represents weight, time, or whatever other metric to measure
 
-# class Routine(models.Model):
-#     routineName = models.CharField(max_length=64)
-#     exercises = models.ArrayModelField(
-#         model_container=RoutineExercise,
-#     )
-
 class LogEntry(models.Model):
     name = models.CharField(max_length=64)  #name of exercise or routine
     time = models.DateTimeField()               #time the entry was completed
-
-# class LogDay(models.Model):
-#     day = models.IntegerField()             #Day of the month (1-31 typically)
-#     month = models.IntegerField()           #Month represented by integer 1-12
-#     year = models.IntegerField()            #Year (i.e. 2019)
-#     entries = models.ArrayModelField(
-#         model_container=LogEntry,           #names of exercises/routines
-#     )
-
-# class LogMonth(models.Model):
-#     month = models.IntegerField()           #Month represented by integer 1-12
-#     year = models.IntegerField()            #Year (i.e. 2019)
-#     days = models.ArrayModelField(
-#         model_container=LogDay,
-#     )
-
-# class LogYear(models.Model):
-#     year = models.IntegerField()            #Year (i.e. 2019)
-#     months = models.ArrayModelField(
-#         model_container=LogMonth,
-#     )
-
-# class User(models.Model):
-#     uID = models.IntegerField()
-#     username = models.CharField(max_length=32)
-#     email = models.CharField(max_length=64)
-#     routines = models.ArrayModelField(
-#         model_container=Routine,
-#     )
-#     log = models.ArrayModelField(
-#         model_container=LogYear,
-#     )
