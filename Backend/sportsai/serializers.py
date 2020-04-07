@@ -6,7 +6,7 @@ class PersonSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
             'id',
-            'FirstName',
-            'LastName',
+            'First',
+            'Last',
         )
         model = Person

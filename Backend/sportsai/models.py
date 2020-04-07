@@ -2,12 +2,12 @@ from django.db import models
 
 # Create your models here.
 class Person(models.Model):
-    FirstName = models.CharField(max_length=20)
-    LastName = models.CharField(max_length=20)
+    First = models.CharField(max_length=20)
+    Last = models.CharField(max_length=20)
 
     def __str__(self):
         """A string representation of the name."""
-        return self.FirstName + " " + self.LastName
+        return self.First + " " + self.Last
 
 
 class Loan(models.Model):
