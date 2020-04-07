@@ -4,6 +4,10 @@ import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Redirect } from '../node_modules/react-router-dom';
 
 import baller from './components/images/hooper.png';
+import swimmer from './components/images/swimmer.JPG';
+import baller3d from './components/images/baller.JPG';
+import runner from './components/images/runner.JPG';
+import train from './components/images/3d_analysis.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
 import { slideInRight } from '../node_modules/react-animations/lib/slide-in-right';
@@ -71,11 +75,11 @@ const Home = () => (
           It has brought positive impact in the following areas:
               </p>
         <div className="CircleImages">
-          <img src={baller} alt="Avatar"></img>
+          <img src={baller3d} alt="Avatar"></img>
           <div className="spacer2"></div>
-          <img src={baller} alt="Avatar"></img>
+          <img src={swimmer} alt="Avatar"></img>
           <div className="spacer2"></div>
-          <img src={baller} alt="Avatar"></img>
+          <img src={runner} alt="Avatar"></img>
         </div>
         <p></p>
       </div>
@@ -96,7 +100,7 @@ const Home = () => (
               </p>
       </section>
       <section className="RightSection">
-        <img className="AI-Photo" src={baller} />
+        <img className="AI-Photo" src={train} />
       </section>
     </section>
   </div>
