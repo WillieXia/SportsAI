@@ -92,12 +92,12 @@
     position:flex;
     width:100%;
     background: white;
+    padding-bottom: 10%;
 }
 
 .See_it_in_action{
     font-size: 3vw;
     font-weight: 300;
-    padding-top: 5%;
 }
 
 .How_it_Works{
@@ -114,14 +114,16 @@
 
 .Description3{
     padding-top: 10%;
+    padding-right: 5%;
     font-size: 2vw;
     font-weight: 300;
 }
 
 .AI-Photo{
-    padding-top: 10%;
+    padding-top: 25%;
+    padding-right: 8%;
     position: center;
-    width:35vw;
+    width:45vw;
     flex:1;
 }
 

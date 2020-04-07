@@ -93,10 +93,9 @@ const Home = () => (
           <span className="How_it"> How it</span> Works
               </header>
         <p className="Description3">
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
+          We use machine learning to track muscle form movements in order to
+          give accurate feedback in optimizing form and muscle involvement.
+          
               </p>
       </section>
       <section className="RightSection">
