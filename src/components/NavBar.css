@@ -1,6 +1,6 @@
 .navbar{
     position:flex;
-    background-color: #D6D8D9;
+    background-color: #2A2829;
 }
 .navbar_navigation{
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .navBar_logo a{
-    color: black;
+    color: #F7EECD;
     text-decoration: none;
     font-size: 3vw;
     font-weight: 300;
@@ -18,7 +18,7 @@
 }
 
 .navbar_items a{
-    color: black;
+    color: #F7EECD;
     text-decoration: none;
 }
 

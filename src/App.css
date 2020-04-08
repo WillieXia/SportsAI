@@ -1,8 +1,13 @@
+.main {
+     overflow:hidden
+}
+
 .Desc{
     padding-top:4%;
 }
 
 .Catch{
+    background-color: #F7EECD;
     display:flex; 
     flex-direction:row;
     position:flex;
@@ -15,11 +20,13 @@
 }
 
 .Title1 {
+    color:#2A2829;
     font-size: 4vw;
     font-weight: 700;
 }
 
 .Title2{
+    color:#2A2829;
     font-size: 4vw;
     font-weight: 700;
 }
@@ -31,6 +38,7 @@
 }
 
 .Description{
+    color:#2A2829;
     font-size: 2.5vw;
     font-weight: 300;
     padding-top: 5%;
@@ -47,11 +55,12 @@
     flex-direction:row;
     position:flex;
     width:100%;
-    background-color: #D6D8D9;
+    background-color: #2A2829;
     
 }
 
 .Artificial_Intelligence_in_Sports{
+    color:#F7EECD;
     text-align: center;
     width: 100%;
     padding-top: 5%;
@@ -76,6 +85,7 @@
     padding-top:2%;
 }
 .CircleImages img{
+    box-shadow: 5px 5px 20px 20px rgba(0,0,0,0.5);
     width:15vw;
     height:15vw;
     border-radius: 50%;
@@ -95,12 +105,22 @@
     padding-bottom: 10%;
 }
 
+.leftSection2{
+    padding-right:5%;
+    padding-top: 8%;
+    padding-left:8%;
+    width:50%;
+    height:100%;
+}
+
 .See_it_in_action{
+    color: #2A2829;
     font-size: 3vw;
     font-weight: 300;
 }
 
 .How_it_Works{
+    color: #2A2829;
     font-size: 4vw;
     font-weight: 700;
 }
@@ -113,16 +133,17 @@
 }
 
 .Description3{
-    padding-top: 10%;
-    padding-right: 5%;
+    color: #2A2829;
+    padding-top:4%;
     font-size: 2vw;
     font-weight: 300;
 }
-
+.RightSection2{
+    padding-right:5%;
+}
 .AI-Photo{
-    padding-top: 25%;
-    padding-right: 8%;
-    position: center;
+    box-shadow: 40px 40px 10px 10px rgba(0,0,0,0.5);
+    margin-top: 26%;
     width:45vw;
     flex:1;
 }

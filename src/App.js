@@ -45,7 +45,7 @@ export class App extends React.Component {
 }
 
 const Home = () => (
-  <div>
+  <div className="main">
     <meta name="viewport" content="width=device-width, maximum-scale=0" />
     <section className="CatchSection" id = "CatchSection">
       <header className="Catch">
@@ -85,7 +85,7 @@ const Home = () => (
       </div>
     </section>
     <section className="EndSection" id = "EndSection">
-      <section className="leftSection">
+      <section className="leftSection2">
         <p className="See_it_in_action">
           See it in action
               </p>
@@ -98,7 +98,7 @@ const Home = () => (
           
               </p>
       </section>
-      <section className="RightSection">
+      <section className="RightSection2">
         <img className="AI-Photo" src={train} />
       </section>
     </section>
@@ -143,7 +143,9 @@ class LoginBox extends React.Component {
     };
   }
 
-  submitLogin(e) {}
+  submitLogin(e) {
+
+  }
 
   render() {
     return (

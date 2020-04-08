@@ -10,7 +10,6 @@ const NavBar = () => (
             <div className="spacer"></div>
             <div className="navbar_items">
                 <ul>
-                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
                     <li className="Item1"><Link to="/Login">Login</Link></li>
                     <li className="Item2"><Link to="/About">About</Link></li>
                     <li className="Item3"><Link to="/Team">Team</Link></li>
