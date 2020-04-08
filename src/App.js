@@ -10,6 +10,7 @@ import runner from './components/images/runner.JPG';
 import train from './components/images/3d_analysis.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
+ 
 import { slideInRight } from '../node_modules/react-animations/lib/slide-in-right';
 
 const styles = {
