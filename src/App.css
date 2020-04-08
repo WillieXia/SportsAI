@@ -1,12 +1,14 @@
-.main {
-     overflow:hidden
+.main1 {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
-
 .Desc{
     padding-top:4%;
 }
 
 .Catch{
+    padding-top:2%;
     background-color: #F7EECD;
     display:flex; 
     flex-direction:row;

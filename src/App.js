@@ -46,8 +46,8 @@ export class App extends React.Component {
 }
 
 const Home = () => (
-  <div className="main">
-    <meta name="viewport" content="width=device-width, maximum-scale=0" />
+  <div className="main1">
+    <meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
     <section className="CatchSection" id = "CatchSection">
       <header className="Catch">
         {/*Information part*/}
