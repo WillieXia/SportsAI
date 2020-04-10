@@ -146,14 +146,23 @@ class LoginBox extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  submitLogin() {
-    console.log(this.state.username, this.state.password)
-  }
-
   handleChange({ target }) {
     this.setState({
       [target.name]: target.value
     });
+  }
+
+  submitLogin() {
+    console.log(this.state.username, this.state.password)
+  }
+
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/api/');
+      this.state.username = await res.json();
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   render() {
