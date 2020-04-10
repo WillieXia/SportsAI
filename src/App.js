@@ -11,14 +11,13 @@ import train from './components/images/3d_analysis.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
  
-import { slideInRight } from '../node_modules/react-animations/lib/slide-in-right';
-
-const styles = {
-  bounce: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(bounce, 'bounce')
-  }
-}
+// import { slideInRight } from '../node_modules/react-animations/lib/slide-in-right';
+// const styles = {
+//   bounce: {
+//     animation: 'x 1s',
+//     animationName: Radium.keyframes(bounce, 'bounce')
+//   }
+// }
 
 
 
@@ -136,16 +135,25 @@ const Contact = () => (
 );
 
 class LoginBox extends React.Component {
-  
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      username: "",
+      password: ""
     };
+    
+    this.submitLogin = this.submitLogin.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  submitLogin(e) {
+  submitLogin() {
+    console.log(this.state.username, this.state.password)
+  }
 
+  handleChange({ target }) {
+    this.setState({
+      [target.name]: target.value
+    });
   }
 
   render() {
@@ -162,6 +170,8 @@ class LoginBox extends React.Component {
               type="text"
               name="username"
               className="login-input"
+              value={ this.state.username }
+              onChange={ this.handleChange }
               placeholder="Username"/>
           </div>
           
@@ -171,10 +181,12 @@ class LoginBox extends React.Component {
               type="password"
               name="password"
               className="login-input"
+              value={ this.state.password }
+              onChange={ this.handleChange }   
               placeholder="Password"/>
           </div>
 
-          <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
+          <button type="button" className="login-btn" onClick={this.submitLogin}>Login</button>
 
           <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Facebook</button>
 
