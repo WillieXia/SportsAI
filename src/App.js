@@ -141,7 +141,11 @@ class LoginBox extends React.Component {
       username: "",
       password: ""
     };
-    
+    this.result = {
+      username: "",
+      password: ""
+    }
+
     this.submitLogin = this.submitLogin.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -153,13 +157,22 @@ class LoginBox extends React.Component {
   }
 
   submitLogin() {
-    console.log(this.state.username, this.state.password)
+    fetch('http://127.0.0.1:8000/api/',{
+      method:"POST",
+      headers:{
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        "First": this.state.username,
+        "Last": this.state.password
+      })
+    })
   }
 
   async componentDidMount() {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/');
-      this.state.username = await res.json();
+      const res = await fetch('http://127.0.0.1:8000/api/?format=json');
+      this.result.username = await res.json();
     } catch (e) {
       console.log(e);
     }
