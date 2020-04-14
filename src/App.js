@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Redirect } from '../node_modules/react-router-dom';
 
 import baller from './components/images/hooper.png';
+import loginimage from './components/images/Ferb.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
 import { slideInRight } from '../node_modules/react-animations/lib/slide-in-right';
@@ -103,13 +104,21 @@ const Home = () => (
 );
 
 const Login = () => (
-    <div className="root-container">
-        
-        <meta name="viewport" content="width=device-width, maximum-scale=0" />
-        <section className="nbar">
-          <LoginBox/>
-        </section>
-    </div>
+  <section className="CatchSection" id = "CatchSection">
+    <header className="Catch">
+      <section className="leftSection">
+        <img className="ballerimage" src={loginimage} />
+      </section>
+      <section className="RightSection">
+        <div className="root-container"> 
+            <meta name="viewport" content="width=device-width, maximum-scale=0" />
+            <section className="nbar">
+              <LoginBox/>
+            </section>
+        </div>
+      </section>
+    </header>
+  </section>
 );
 
 const About = () => (
@@ -140,7 +149,9 @@ class LoginBox extends React.Component {
     };
   }
 
-  submitLogin(e) {}
+  submitLogin(e) {
+    console.log("jeff")
+  }
 
   render() {
     return (
@@ -169,11 +180,11 @@ class LoginBox extends React.Component {
           </div>
 
           <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
-
-          <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Facebook</button>
-
-          <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Google</button>
-
+          <section className="RightSection">
+            <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>FB</button>
+            <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>Google</button>
+          </section>
+      
           </div>
         </div>  
     );

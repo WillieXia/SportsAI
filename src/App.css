@@ -72,9 +72,11 @@
     width:55%;
     padding-left:22.5%;
 }
+
 .CircleImages{
     padding-top:2%;
 }
+
 .CircleImages img{
     width:15vw;
     height:15vw;
@@ -174,7 +176,7 @@
 
 .inner-container {
     transition: visibility 0.2s ease-out;
-    background-color: rgba(15, 0, 0, 0);
+    background-color: rgba(192, 38, 38, 0);
 }
 
 .inner-container.show {
@@ -185,7 +187,7 @@
     text-align: center;
     padding-left: 120px;
     padding-right: 120px;
-    margin-top: 150px;
+    margin-top: 75px;
     margin-bottom: 10px;
     font-family: Ozxgen, sans-serif;
     font-size: 22px;
@@ -205,8 +207,8 @@
 .input-group {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .login-label {
@@ -219,6 +221,7 @@
 .login-input {
     height: 2em;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .login-btn {
@@ -236,13 +239,35 @@
     cursor: pointer;
 }
 
+
+.facebook-google-btn {
+    padding: 2px 2px;
+    /* background-color: #417cef;
+    */
+    font-size: 15px;
+    font-family: Oxygen, sans-serif;
+    width:2vw;
+    height:2vw;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin-top: 20px;
+    border: 2px solid #417cef;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.facebook-google-btn:hover, .facebook-google-btn:focus {
+    background-color: #030303;
+    color: white;
+}
+
 .login-btn:hover, .login-btn:focus {
     background-color: #030303;
     color: white;
 }
 
-.login-background-image {
-    position: center;
-    width:35vw;
-    flex:1;
-}
+/* .login-background-image {
+    background-image: url("./components/images/Ferb.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+} */
