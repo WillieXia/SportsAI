@@ -107,13 +107,13 @@ const Home = () => (
 );
 
 const Login = () => (  
-  <section className="CatchSection" id = "CatchSection">
-    <header className="Catch">
-      <section className="leftSection">
-        <img className="ballerimage" src={loginimage} />
+  <section className="CatchSection3">
+    <header className="Catch3">
+      <section className="leftSection3">
+        <img className="loginimage" src={loginimage} />
       </section>
-      <section className="RightSection">
-        <div className="root-container"> 
+      <section className="RightSection3">
+        <div className="root-container3"> 
             <meta name="viewport" content="width=device-width, maximum-scale=0" />
             <section className="nbar">
               <LoginBox/>
