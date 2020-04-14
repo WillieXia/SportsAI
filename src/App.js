@@ -4,17 +4,21 @@ import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Redirect } from '../node_modules/react-router-dom';
 
 import baller from './components/images/hooper.png';
+import swimmer from './components/images/swimmer.JPG';
+import baller3d from './components/images/baller.JPG';
+import runner from './components/images/runner.JPG';
+import train from './components/images/3d_analysis.png';
 import loginimage from './components/images/Ferb.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
-import { slideInRight } from '../node_modules/react-animations/lib/slide-in-right';
-
-const styles = {
-  bounce: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(bounce, 'bounce')
-  }
-}
+ 
+// import { slideInRight } from '../node_modules/react-animations/lib/slide-in-right';
+// const styles = {
+//   bounce: {
+//     animation: 'x 1s',
+//     animationName: Radium.keyframes(bounce, 'bounce')
+//   }
+// }
 
 
 
@@ -42,8 +46,8 @@ export class App extends React.Component {
 }
 
 const Home = () => (
-  <div>
-    <meta name="viewport" content="width=device-width, maximum-scale=0" />
+  <div className="main1">
+    <meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
     <section className="CatchSection" id = "CatchSection">
       <header className="Catch">
         {/*Information part*/}
@@ -72,17 +76,17 @@ const Home = () => (
           It has brought positive impact in the following areas:
               </p>
         <div className="CircleImages">
-          <img src={baller} alt="Avatar"></img>
+          <img src={baller3d} alt="Avatar"></img>
           <div className="spacer2"></div>
-          <img src={baller} alt="Avatar"></img>
+          <img src={swimmer} alt="Avatar"></img>
           <div className="spacer2"></div>
-          <img src={baller} alt="Avatar"></img>
+          <img src={runner} alt="Avatar"></img>
         </div>
         <p></p>
       </div>
     </section>
     <section className="EndSection" id = "EndSection">
-      <section className="leftSection">
+      <section className="leftSection2">
         <p className="See_it_in_action">
           See it in action
               </p>
@@ -90,20 +94,19 @@ const Home = () => (
           <span className="How_it"> How it</span> Works
               </header>
         <p className="Description3">
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
-          DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION DESCRIPTION
+          We use machine learning to track muscle form movements in order to
+          give accurate feedback in optimizing form and muscle involvement.
+          
               </p>
       </section>
-      <section className="RightSection">
-        <img className="AI-Photo" src={baller} />
+      <section className="RightSection2">
+        <img className="AI-Photo" src={train} />
       </section>
     </section>
   </div>
 );
 
-const Login = () => (
+const Login = () => (  
   <section className="CatchSection" id = "CatchSection">
     <header className="Catch">
       <section className="leftSection">
@@ -141,16 +144,47 @@ const Contact = () => (
 );
 
 class LoginBox extends React.Component {
-  
   constructor() {
     super();
     this.state = {
-      name: 'React'
+      username: "",
+      password: ""
     };
+    this.result = {
+      username: "",
+      password: ""
+    }
+
+    this.submitLogin = this.submitLogin.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
-  submitLogin(e) {
-    console.log("jeff")
+  handleChange({ target }) {
+    this.setState({
+      [target.name]: target.value
+    });
+  }
+
+  submitLogin() {
+    fetch('http://127.0.0.1:8000/api/',{
+      method:"POST",
+      headers:{
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        "First": this.state.username,
+        "Last": this.state.password
+      })
+    })
+  }
+
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/api/?format=json');
+      this.result.username = await res.json();
+    } catch (e) {
+      console.log(e);
+    }
   }
 
   render() {
@@ -167,6 +201,8 @@ class LoginBox extends React.Component {
               type="text"
               name="username"
               className="login-input"
+              value={ this.state.username }
+              onChange={ this.handleChange }
               placeholder="Username"/>
           </div>
           
@@ -176,6 +212,8 @@ class LoginBox extends React.Component {
               type="password"
               name="password"
               className="login-input"
+              value={ this.state.password }
+              onChange={ this.handleChange }   
               placeholder="Password"/>
           </div>
 
@@ -184,7 +222,7 @@ class LoginBox extends React.Component {
             <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>FB</button>
             <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>Google</button>
           </section>
-      
+
           </div>
         </div>  
     );

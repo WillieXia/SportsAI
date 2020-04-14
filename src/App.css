@@ -83,11 +83,9 @@
     width:55%;
     padding-left:22.5%;
 }
-
 .CircleImages{
     padding-top:2%;
 }
-
 .CircleImages img{
     box-shadow: 5px 5px 20px 20px rgba(0,0,0,0.5);
     width:15vw;
@@ -264,7 +262,6 @@
     cursor: pointer;
 }
 
-
 .facebook-google-btn {
     padding: 2px 2px;
     /* background-color: #417cef;
@@ -290,9 +287,3 @@
     background-color: #030303;
     color: white;
 }
-
-/* .login-background-image {
-    background-image: url("./components/images/Ferb.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-} */
