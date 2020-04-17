@@ -249,8 +249,6 @@
 
 .login-btn {
     padding: 2px 30px;
-    /* background-color: #417cef;
-    */
     border: 0;
     font-size: 18px;
     border-radius: 3px;
@@ -263,19 +261,18 @@
 }
 
 .facebook-google-btn {
-    padding: 2px 2px;
-    /* background-color: #417cef;
-    */
-    font-size: 15px;
-    font-family: Oxygen, sans-serif;
-    width:2vw;
-    height:2vw;
+    width:3vw;
+    height:3vw;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.03);
     margin-top: 20px;
     border: 2px solid #417cef;
     transition: background-color 0.3s ease-out;
     cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    range: url('./components/images/facebook.png');
 }
 
 .facebook-google-btn:hover, .facebook-google-btn:focus {
@@ -309,6 +306,7 @@
 }
 .RightSection3{
     padding-right:5%;
+    margin: 0 1%;
 }
 .root-container3{
     width: 100%;
@@ -320,4 +318,21 @@
 }
 .img1 {
     border-radius: 4px;
+}
+.CircleImages2{
+    display: flex;
+}
+.CircleImages2 img{
+    width:4vw;
+    height:4vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
