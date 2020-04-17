@@ -8,7 +8,7 @@ import swimmer from './components/images/swimmer.JPG';
 import baller3d from './components/images/baller.JPG';
 import runner from './components/images/runner.JPG';
 import train from './components/images/3d_analysis.png';
-import loginimage from './components/images/Ferb.png';
+import loginimage from './components/images/loginimage.jpeg';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
  
@@ -107,10 +107,11 @@ const Home = () => (
 );
 
 const Login = () => (  
-  <section className="CatchSection3">
     <header className="Catch3">
       <section className="leftSection3">
-        <img className="loginimage" src={loginimage} />
+        <div className="root-container3"></div>
+          <img className="loginimage" src={loginimage} />
+
       </section>
       <section className="RightSection3">
         <div className="root-container3"> 
@@ -121,7 +122,6 @@ const Login = () => (
         </div>
       </section>
     </header>
-  </section>
 );
 
 const About = () => (
@@ -191,7 +191,7 @@ class LoginBox extends React.Component {
     return (
       <div className="inner-container">
         <div className="header">
-          Sign Up With
+          Login
         </div>
         <div className="box">
 

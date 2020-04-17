@@ -287,3 +287,37 @@
     background-color: #030303;
     color: white;
 }
+
+.Catch3{
+    padding-top:2%;
+    background-color: #F7EECD;
+    display:flex; 
+    flex-direction:row;
+    position:flex;
+    width:100%;
+}
+
+.leftSection3{
+    padding-right:5%;
+    padding-top: 8%;
+    padding-left:8%;
+    width:50%;
+    height:100%;
+    float: left;
+    margin: 0 1%;
+    position: top;
+}
+.RightSection3{
+    padding-right:5%;
+}
+.root-container3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img1 {
+    border-radius: 4px;
+}
