@@ -10,6 +10,7 @@ import runner from './components/images/runner.JPG';
 import train from './components/images/3d_analysis.png';
 import loginimage from './components/images/loginimage.jpeg';
 import facebook from './components/images/facebook.png';
+import google from './components/images/google.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
  
@@ -219,15 +220,18 @@ class LoginBox extends React.Component {
           </div>
 
           <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
-          <section className="RightSection">
+          <section className="RightSection3">
                 <section className="CircleImages2">
                   <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
                     <img src={facebook} alt="Avatar" class="center1"></img>
                   </button>
                 </section>
-             
-            {/* <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>Google</button> */}
-          </section>
+                <section className="CircleImages2">
+                  <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
+                    <img src={google} alt="Avatar" class="center1"></img>
+                  </button>
+                </section>
+            </section>
 
           </div>
         </div>  
