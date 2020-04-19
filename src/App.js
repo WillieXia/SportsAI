@@ -220,18 +220,15 @@ class LoginBox extends React.Component {
           </div>
 
           <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
-          <section className="RightSection3">
                 <section className="CircleImages2">
                   <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
                     <img src={facebook} alt="Avatar" class="center1"></img>
                   </button>
-                </section>
-                <section className="CircleImages2">
                   <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
                     <img src={google} alt="Avatar" class="center1"></img>
                   </button>
                 </section>
-            </section>
+
 
           </div>
         </div>  
