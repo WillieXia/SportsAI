@@ -10,7 +10,7 @@ import runner from './components/images/runner.JPG';
 import train from './components/images/3d_analysis.png';
 import loginimage from './components/images/loginimage.jpeg';
 import facebook from './components/images/facebook.png';
-import google from './components/images/google.png';
+import google from './components/images/google1.png';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
  
