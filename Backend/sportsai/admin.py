@@ -4,8 +4,6 @@ from .models import *
 
 admin.site.register(Person)
 
-admin.site.register(Loan)
-
 admin.site.register(Exercise)
 
 admin.site.register(RoutineExercise)
