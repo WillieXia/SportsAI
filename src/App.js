@@ -111,7 +111,7 @@ const Home = () => (
 
 const Login = () => (  
     <header className="Catch3">
-      <section className="leftSection3">
+      <section className="rightSection">
         <div className="root-container3"></div>
           <img className="loginimage" src={loginimage} />
 
