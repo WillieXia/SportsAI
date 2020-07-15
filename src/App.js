@@ -38,10 +38,11 @@ export class App extends React.Component {
         <NavBar/>
         <Redirect from="/" to="Home" />
         <Route path='/Home' component={Home} />
+        <Route path='/Account' component={Account}/>
         <Route path='/Login' component={Login} />
         <Route path='/About' component={About}/>
         <Route path='/Team' component={Team} />
-        <Route path='/Contact' component={Contact}/>
+        <Route path='/Contact' component={Contact}/>       
       </Router>
     );
   }
@@ -142,6 +143,12 @@ const Team = () => (
 const Contact = () => (
   <div className="">
     CONTACT CONTACT CONTACT
+  </div>
+);
+
+const Account = () => (
+  <div className="">
+    ACCOUNT ACCOUNT ACCOUNT
   </div>
 );
 
