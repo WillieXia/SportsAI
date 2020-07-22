@@ -132,7 +132,7 @@ const About = () => (
 
 const Team = () => (
   <div className="">
-    TEAM TEAM TEAM
+    
   </div>
 );
 
@@ -144,9 +144,49 @@ const Contact = () => (
 );
 
 const Account = () => (
-  <div className="">
-    ACCOUNT ACCOUNT ACCOUNT
-  </div>
+   <section className="loginboxcontainer">
+        <div className="logintitle">New Workout</div>
+        <div className="loginbox">
+          <div className="input-group">
+            <label htmlFor="username">Date</label>
+            <input
+              type="text"
+              name="username"
+              className="login-input"
+              placeholder="  Enter the date"/>
+          </div>
+          
+          <div className="input-group">
+            <label htmlFor="password">Name</label>
+            <input
+              type="password"
+              name="password"
+              className="login-input"
+              placeholder="  Name of workout"/>
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="password">Reps</label>
+            <input
+              type="password"
+              name="password"
+              className="login-input"
+              placeholder="  Number of Reps"/>
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="password">Weight</label>
+            <input
+              type="password"
+              name="password"
+              className="login-input"
+              placeholder="  Amount of Weight"/>
+          </div>
+
+          <button type="button" className="login-btn">Save Workout</button>
+
+        </div>
+      </section>  
 );
 
 class LoginBox extends React.Component {
