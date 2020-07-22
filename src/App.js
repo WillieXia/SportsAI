@@ -109,26 +109,23 @@ const Home = () => (
   </div>
 );
 
-const Login = () => (  
+const Login = () => (
+  <div className="loginpage">  
     <header className="Catch3">
-      <section className="rightSection">
-        <div className="root-container3"></div>
-          <img className="loginimage" src={loginimage} />
+       <meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
 
+      <section className="leftSection4">
+          <img className="loginimg" src={loginimage} />
       </section>
-      <section className="RightSection3">
-        <div className="root-container3"> 
-            <meta name="viewport" content="width=device-width, maximum-scale=0" />
-            <section className="nbar">
-              <LoginBox/>
-            </section>
-        </div>
+      <section className="LoginRightSection">
+          <LoginBox/>
       </section>
     </header>
+  </div>
 );
 
 const About = () => (
-  <div className=" ">
+  <div className="main">
     ABOUT ABOUT ABOUT
   </div>
 );
@@ -198,12 +195,9 @@ class LoginBox extends React.Component {
 
   render() {
     return (
-      <div className="inner-container">
-        <div className="header">
-          Login
-        </div>
-        <div className="box">
-
+      <section className="loginboxcontainer">
+        <div className="logintitle">Login to Static.ai</div>
+        <div className="loginbox">
           <div className="input-group">
             <label htmlFor="username">Username</label>
             <input
@@ -212,7 +206,7 @@ class LoginBox extends React.Component {
               className="login-input"
               value={ this.state.username }
               onChange={ this.handleChange }
-              placeholder="Username"/>
+              placeholder="  Enter your username"/>
           </div>
           
           <div className="input-group">
@@ -223,22 +217,23 @@ class LoginBox extends React.Component {
               className="login-input"
               value={ this.state.password }
               onChange={ this.handleChange }   
-              placeholder="Password"/>
+              placeholder="  Enter your password"/>
           </div>
 
-          <button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>Login</button>
-                <section className="CircleImages2">
+          <div className="input-group">
+          	<button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>LOG IN</button>
+                <div className="CircleImages2">
                   <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
                     <img src={facebook} alt="Avatar" class="center1"></img>
                   </button>
+
                   <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
                     <img src={google} alt="Avatar" class="center1"></img>
                   </button>
-                </section>
-
-
+                </div>
           </div>
-        </div>  
+        </div>
+      </section>  
     );
   }
 
