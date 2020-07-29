@@ -23,7 +23,6 @@ import { bounce } from '../node_modules/react-animations';
 // }
 
 
-
 export class App extends React.Component {
   constructor() {
     super();
@@ -132,7 +131,7 @@ const About = () => (
 
 const Team = () => (
   <div className="">
-    
+    TEAM TEAM TEAM
   </div>
 );
 
@@ -235,45 +234,49 @@ class LoginBox extends React.Component {
 
   render() {
     return (
-      <section className="loginboxcontainer">
+
+    	<section>
         <div className="logintitle">Login to Static.ai</div>
         <div className="loginbox">
           <div className="input-group">
-            <label htmlFor="username">Username</label>
-            <input
-              type="text"
-              name="username"
+            <label htmlFor="username">
+            	<div className="usernametitle">Username</div>
+            </label>
+            <input type="text" name="username"
               className="login-input"
               value={ this.state.username }
               onChange={ this.handleChange }
-              placeholder="  Enter your username"/>
+              placeholder="    Enter your username"/>
           </div>
           
           <div className="input-group">
-            <label htmlFor="password">Password</label>
+            <label htmlFor="password">
+            	<div className="usernametitle">Password</div>
+            </label>
             <input
               type="password"
               name="password"
               className="login-input"
               value={ this.state.password }
               onChange={ this.handleChange }   
-              placeholder="  Enter your password"/>
+              placeholder="    Enter your password"/>
           </div>
 
-          <div className="input-group">
-          	<button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>LOG IN</button>
-                <div className="CircleImages2">
-                  <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
-                    <img src={facebook} alt="Avatar" class="center1"></img>
-                  </button>
+          <div>
+          		<label htmlFor="checkbox"></label>
+            <input type="checkbox" name="checkbox"/> Remember Me
+            <button type="button" className="forgotpassword-btn">Forgot Password?</button>
+          </div>
+			          
 
-                  <button type="button" className="facebook-google-btn" onClick={this.submitLogin.bind(this)}>
-                    <img src={google} alt="Avatar" class="center1"></img>
-                  </button>
-                </div>
+          <div>
+          	<button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>LOG IN</button>
+            <p>Or login with </p>
+            <span class="fa fa-facebook-f"></span>    
           </div>
         </div>
-      </section>  
+        </section>
+        
     );
   }
 
