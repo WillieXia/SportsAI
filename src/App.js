@@ -237,6 +237,8 @@ class LoginBox extends React.Component {
 
     	<section>
         <div className="logintitle">Login to Static.ai</div>
+        <span className="LoginSlogan">Join us and start reaching your fitness goals today!</span>
+        
         <div className="loginbox">
           <div className="input-group">
             <label htmlFor="username">
@@ -269,11 +271,18 @@ class LoginBox extends React.Component {
           </div>
 			          
 
-          <div>
+          <section className="login-social-buttons">
           	<button type="button" className="login-btn" onClick={this.submitLogin.bind(this)}>LOG IN</button>
-            <p>Or login with </p>
-            <span class="fa fa-facebook-f"></span>    
-          </div>
+            <section className="social-buttons">
+            	Or login with
+                <button type="social-btns" className="facebook-btn" onClick={this.submitLogin.bind(this)}>
+                    <img src={facebook} alt="Avatar" class="center1"></img>
+                </button>
+                <button type="social-btns" className="google-btn" onClick={this.submitLogin.bind(this)}>
+   					<img src={google} alt="Avatar" class="center1"></img>
+                </button>
+          	</section>
+          </section>
         </div>
         </section>
         
