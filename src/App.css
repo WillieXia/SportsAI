@@ -433,3 +433,38 @@
 	border: none;
 	background: none;
 }
+.accountbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10%;
+    margin-top: 5%;
+}
+.account-btn {
+    width: 60%;
+    padding: 1.5% 2% 1.5% 2%;
+    border-radius: 3px;
+    font-family: Oxygen, sans-serif;
+    background-color: gray;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.account-btn:hover, .account-btn:focus {
+    background-color: #030303;
+    color: white;
+}
+.AccountCatch{
+    padding-top:2%;
+    padding-bottom: 15.5%;
+    background-color: #F7EECD;
+    display:flex; 
+    flex-direction:row;
+    position:flex;
+    width:100%;
+}
+.AccountSection{
+    margin: auto;
+    padding-top: 2%;
+    min-width: 35%;
+}

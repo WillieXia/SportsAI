@@ -143,8 +143,11 @@ const Contact = () => (
 );
 
 const Account = () => (
-   <section className="loginboxcontainer">
-        <div className="logintitle">New Workout</div>
+
+	<section className="AccountCatch" id = "CatchSection">
+	<meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
+	<div className="AccountSection">
+        <div className="logintitle">New Exercise</div>
         <div className="loginbox">
           <div className="input-group">
             <label htmlFor="username">Date</label>
@@ -156,21 +159,21 @@ const Account = () => (
           </div>
           
           <div className="input-group">
-            <label htmlFor="password">Name</label>
+            <label htmlFor="password">Exercise Name</label>
             <input
               type="password"
               name="password"
               className="login-input"
-              placeholder="  Name of workout"/>
+              placeholder="  Name of exercise"/>
           </div>
 
           <div className="input-group">
-            <label htmlFor="password">Reps</label>
+            <label htmlFor="password">Reps/Time</label>
             <input
               type="password"
               name="password"
               className="login-input"
-              placeholder="  Number of Reps"/>
+              placeholder="  Number of Reps or time"/>
           </div>
 
           <div className="input-group">
@@ -182,10 +185,11 @@ const Account = () => (
               placeholder="  Amount of Weight"/>
           </div>
 
-          <button type="button" className="login-btn">Save Workout</button>
+          <button type="button" className="account-btn">Add Exercise</button>
 
         </div>
-      </section>  
+    </div> 
+    </section>
 );
 
 class LoginBox extends React.Component {
