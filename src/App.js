@@ -11,6 +11,7 @@ import train from './components/images/3d_analysis.png';
 import loginimage from './components/images/loginimage2.jpeg';
 import facebook from './components/images/facebook.png';
 import google from './components/images/google1.png';
+import calender from './components/images/calender.jpeg';
 import Radium, { StyleRoot } from '../node_modules/radium';
 import { bounce } from '../node_modules/react-animations';
  
@@ -147,6 +148,7 @@ const Account = () => (
 	<section className="AccountCatch" id = "CatchSection">
 	<meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
 	<div className="AccountSection">
+
         <div className="logintitle">New Exercise</div>
         <div className="loginbox">
           <div className="input-group">

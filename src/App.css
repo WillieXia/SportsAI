@@ -226,11 +226,13 @@
     height:100%;
     position: flex;
 }
+
 .loginimg {
     max-width: 100%;
     max-height: 70vh;
     margin: auto;
 }
+
 .logintitle {
     color:#2A2829;
     font-size: 2vw;
@@ -243,9 +245,7 @@
     font-size: 1.4vw;
     font-weight: 330;
 }
-.loginboxcontainer {
-    margin: auto;
-}
+
 .forgotpassword-btn {
 	height: 5%;
     width: 25%;
@@ -256,6 +256,7 @@
     background-color: gray;
     cursor: pointer;
 }
+
 .forgotpassword-btn:hover, .forgotpassword-btn:focus {
     background-color: #030303;
     color: white;
@@ -271,26 +272,19 @@
 	margin-top: 7%;
 	flex-direction: row;
 }
+
 .social-buttons{
 	margin-top: 3.5%;
 	float: right;
 }
-.CircleImages2{
-    display: flex;
-}
-.CircleImages2 img{
-    width: 5vw;
-    height: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .center1 {
 	object-fit: fill;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .facebook-btn {
 	background-color: #6081c4;
     width: 2.75vw;
@@ -301,6 +295,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .google-btn {
 	background-color: #ffffff;
     width: 2.75vw;
@@ -327,14 +322,7 @@
 	border: none;
 	background: none;
 }
-.accountbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    border-radius: 10%;
-    margin-top: 5%;
-}
+
 .account-btn {
     width: 60%;
     padding: 1.5% 2% 1.5% 2%;
@@ -344,10 +332,12 @@
     margin-top: 5%;
     cursor: pointer;
 }
+
 .account-btn:hover, .account-btn:focus {
     background-color: #030303;
     color: white;
 }
+
 .AccountCatch{
     padding-top:2%;
     padding-bottom: 15.5%;
@@ -357,8 +347,15 @@
     position:flex;
     width:100%;
 }
+
 .AccountSection{
     margin: auto;
     padding-top: 2%;
     min-width: 35%;
+}
+
+.LeftSection5{
+    width:30%;
+    height:30%;
+    position: flex;
 }
