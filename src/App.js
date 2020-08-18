@@ -57,7 +57,7 @@ const Home = () => (
           <header className="Title1">
             Revolutionizing the
                 </header>
-          <header className="Title2" >
+          <header className="Title" >
             <span className="SportsWord">Sports</span> Industry
                 </header>
           <p className="Description">
@@ -280,10 +280,10 @@ class LoginBox extends React.Component {
             <section className="social-buttons">
             	Or login with
                 <button type="social-btns" className="facebook-btn" onClick={this.submitLogin.bind(this)}>
-                    <img src={facebook} alt="Avatar" class="center1"></img>
+                    <img src={facebook} alt="Avatar" class="button-img"></img>
                 </button>
                 <button type="social-btns" className="google-btn" onClick={this.submitLogin.bind(this)}>
-   					<img src={google} alt="Avatar" class="center1"></img>
+   					<img src={google} alt="Avatar" class="button-img"></img>
                 </button>
           	</section>
           </section>
