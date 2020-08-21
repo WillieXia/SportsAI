@@ -356,7 +356,7 @@
     margin: auto;
 }
 .AccountRightSection{
-    padding-left: 10%;
+    padding-left: 12.5%;
     padding-bottom: 11%;
     position: flex;
     min-width: 30%;
@@ -377,7 +377,7 @@
 }
 
 .AccountCatch{
-    padding: 7.5% 0 1.1% 7.5%;
+    padding: 7.5% 0 0.8% 7.5%;
     background-color: #F7EECD;
     display:flex; 
     flex-direction:row;
