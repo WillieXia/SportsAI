@@ -196,7 +196,7 @@
     color: white;
 }
 
-.Catch3{
+.LoginCatch{
     padding-top:5%;
     padding-bottom: 5%;
     padding-left: 5%;
@@ -338,24 +338,50 @@
     color: white;
 }
 
-.AccountCatch{
-    padding-top:2%;
-    padding-bottom: 15.5%;
-    background-color: #F7EECD;
-    display:flex; 
-    flex-direction:row;
-    position:flex;
-    width:100%;
-}
-
 .AccountSection{
     margin: auto;
     padding-top: 2%;
     min-width: 35%;
 }
 
-.LeftSection5{
-    width:30%;
-    height:30%;
+.calenderimg {
+    max-width: 100%;
+    max-height: 60vh;
+    margin: auto;
+}
+.accountpage {
+    max-height: 200%;
+    min-height: 70vh;
+    max-width: 500vh;
+    margin: auto;
+}
+.AccountRightSection{
+    padding-left: 10%;
+    padding-bottom: 11%;
     position: flex;
+    min-width: 30%;
+}
+
+.account-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.account-input {
+    height: 1.5em;
+    border-radius: 50px;
+    padding: 1% 0 1% 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.AccountCatch{
+    padding: 7.5% 0 1.1% 7.5%;
+    background-color: #F7EECD;
+    display:flex; 
+    flex-direction:row;
+    position:flex;
+    width: auto;
+    height: auto;
 }

@@ -58,7 +58,7 @@ const Home = () => (
           <header className="Title1">
             Revolutionizing the
                 </header>
-          <header className="Title" >
+          <header className="Title1" >
             <span className="SportsWord">Sports</span> Industry
                 </header>
           <p className="Description">
@@ -111,7 +111,7 @@ const Home = () => (
 
 const Login = () => (
   <div className="loginpage">  
-    <header className="Catch3">
+    <header className="LoginCatch">
        <meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
 
       <section className="leftSection4">
@@ -144,54 +144,57 @@ const Contact = () => (
 );
 
 const Account = () => (
-
-	<section className="AccountCatch" id = "CatchSection">
-	<meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
-	<div className="AccountSection">
-
-        <div className="logintitle">New Exercise</div>
-        <div className="loginbox">
-          <div className="input-group">
-            <label htmlFor="username">Date</label>
-            <input
-              type="text"
-              name="username"
-              className="login-input"
-              placeholder="  Enter the date"/>
-          </div>
+	<div className="accountpage">  
+    	<header className="AccountCatch">
+		<meta name="viewport" className = "meta" content="width=device-width, maximum-scale=0" />
+		<section className="leftSection4">
+          <img className="calenderimg" src={calender} />
+      	</section>
+      	<section className="AccountRightSection">
+          <div className="logintitle">New Exercise</div>
+        	<div className="loginbox">
+          		<div className="account-input-group">
+            		<label htmlFor="username">Date</label>
+            		<input
+              		type="text"
+              		name="username"
+              		className="account-input"
+              		placeholder="  Enter the date"/>
+          		</div>
           
-          <div className="input-group">
-            <label htmlFor="password">Exercise Name</label>
-            <input
-              type="password"
-              name="password"
-              className="login-input"
-              placeholder="  Name of exercise"/>
+          		<div className="account-input-group">
+            		<label htmlFor="password">Exercise Name</label>
+        		    <input
+        		    type="password"
+        		    name="password"
+        		    className="account-input"
+        		    placeholder="  Name of exercise"/>
+        		</div>
+		
+        	    <div className="account-input-group">
+        		    <label htmlFor="password">Reps/Time</label>
+        		    <input
+        		    type="password"
+        		    name="password"
+        		    className="account-input"
+        		    placeholder="  Number of Reps or time"/>
+        		</div>
+		
+        		  <div className="account-input-group">
+        		    <label htmlFor="password">Weight</label>
+        		    <input
+        		    type="password"
+        		    name="password"
+        		    className="account-input"
+        		    placeholder="  Amount of Weight"/>
+        		</div>
+
+            <button type="button" className="account-btn">Add Exercise</button>
+
           </div>
-
-          <div className="input-group">
-            <label htmlFor="password">Reps/Time</label>
-            <input
-              type="password"
-              name="password"
-              className="login-input"
-              placeholder="  Number of Reps or time"/>
-          </div>
-
-          <div className="input-group">
-            <label htmlFor="password">Weight</label>
-            <input
-              type="password"
-              name="password"
-              className="login-input"
-              placeholder="  Amount of Weight"/>
-          </div>
-
-          <button type="button" className="account-btn">Add Exercise</button>
-
-        </div>
+        </section>
+        </header>
     </div> 
-    </section>
 );
 
 class LoginBox extends React.Component {
@@ -240,8 +243,7 @@ class LoginBox extends React.Component {
 
   render() {
     return (
-
-    	<section>
+    <section>
         <div className="logintitle">Login to Static.ai</div>
         <span className="LoginSlogan">Join us and start reaching your fitness goals today!</span>
         
@@ -290,8 +292,7 @@ class LoginBox extends React.Component {
           	</section>
           </section>
         </div>
-        </section>
-        
+    </section>  
     );
   }
 
