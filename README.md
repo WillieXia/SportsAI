@@ -5,6 +5,10 @@ Notes:
 -gumgum.com
 -https://visme.co/blog/website-color-schemes/
 -Tonal.com
+
+NEXT STEP DO THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+The next step is to use login authentication so accounts can be made.
+After accounts are made, they can be customized for users.
 -https://github.com/v1k45/ponynote/blob/master/ponynote/frontend/README.md
 
 This is for the front-end part of the project, the website.
